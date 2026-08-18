@@ -136,14 +136,25 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     eventName: GA4Event['eventName'],
     parameters: Record<string, any> = {}
   ) => {
+    const eventParams = {
+      ...parameters,
+      ...utmParams
+    };
+
+    // Forward to live Google Tag / GA4 if loaded
+    if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+      try {
+        (window as any).gtag('event', eventName, eventParams);
+      } catch (err) {
+        // fail silently if gtag is blocked
+      }
+    }
+
     const newEvent: GA4Event = {
       id: `evt_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`,
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }),
       eventName,
-      parameters: {
-        ...parameters,
-        ...utmParams
-      }
+      parameters: eventParams
     };
     setGa4Events(prev => {
       const updated = [newEvent, ...prev].slice(0, 50);
