@@ -1,0 +1,6 @@
+{
+  "name": "West Coast Essentials - Google Merch Store",
+  "description": "High-converting DTC e-commerce storefront redesign for the Google Merchandise Store featuring rapid product discovery, Quick Add, express checkout, and GA4 campaign telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
