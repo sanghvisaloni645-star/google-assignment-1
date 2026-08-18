@@ -9,13 +9,13 @@ export const PRODUCTS: Product[] = [
     originalPrice: 42.00,
     category: 'apparel',
     subcategory: 'tees',
-    image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&auto=format&fit=crop&q=80',
-    secondaryImage: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80',
+    image: '/src/assets/images/gemini_yellow_tee_1787074849176.jpg',
+    secondaryImage: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&auto=format&fit=crop&q=80',
     gallery: [
-      'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&auto=format&fit=crop&q=80',
+      '/src/assets/images/gemini_yellow_tee_1787074849176.jpg',
+      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&auto=format&fit=crop&q=80',
       'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&auto=format&fit=crop&q=80'
     ],
     description: 'The star of the West Coast Essentials collection. Featuring a custom micro-embroidered yellow Nano Banana badge on ultra-soft 240 GSM combed cotton. Boxy modern streetwear fit with dropped shoulders and double-needle collar.',
     features: [
