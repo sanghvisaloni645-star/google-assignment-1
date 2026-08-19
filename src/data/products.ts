@@ -9,10 +9,10 @@ export const PRODUCTS: Product[] = [
     originalPrice: 42.00,
     category: 'apparel',
     subcategory: 'tees',
-    image: '/src/assets/images/regenerated_image_1787107569755.png',
+    image: '/src/assets/images/google_classic_tee_1787107925323.jpg',
     secondaryImage: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&auto=format&fit=crop&q=80',
     gallery: [
-      '/src/assets/images/regenerated_image_1787107569755.png',
+      '/src/assets/images/google_classic_tee_1787107925323.jpg',
       'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&auto=format&fit=crop&q=80',
       'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&auto=format&fit=crop&q=80',
       'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&auto=format&fit=crop&q=80'
